@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:weightSum="1">
+
+    <ImageView
+        android:id="@+id/user_photo"
+        android:layout_width="160dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:contentDescription="@null"
+        android:src="@drawable/imagehome"
+        android:layout_weight="0.27" />
+
+
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFA000"
+        android:layout_marginTop="16dp"
+        android:text="GENERATE QR CODE"
+        android:onClick="onClick"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFA000"
+        android:layout_marginTop="16dp"
+        android:text="SCAN QR CODE"
+        android:onClick="onClick"/>
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFA000"
+        android:layout_marginTop="16dp"
+        android:onClick="onClick"
+        android:text="ADD MONEY IN WALLET" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFA000"
+        android:layout_marginTop="16dp"
+        android:onClick="onClick"
+        android:text="TRANSACTION HISTORY!" />
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFA000"
+        android:layout_marginTop="16dp"
+        android:text="TRANSACTIONS TO BE SYNCED"
+        android:onClick="onClick"/>
+
+
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFA000"
+        android:layout_marginTop="16dp"
+        android:onClick="onClick"
+        android:text="LOGOUT!" />
+
+
+</LinearLayout>

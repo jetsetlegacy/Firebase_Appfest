@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Generator"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:id="@+id/mainBody"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp">
+
+        <LinearLayout
+            android:id="@+id/inputs"
+            android:focusable="true"
+            android:orientation="vertical"
+            android:focusableInTouchMode="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </android.support.design.widget.TextInputLayout>
+            <EditText
+                android:hint="Enter Amount"
+                android:id="@+id/Amount"
+                android:layout_weight="1"
+                android:width="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="5"
+                android:minLines="3"
+                android:inputType="textMultiLine"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/buttons"
+            android:gravity="right"
+            android:layout_below="@+id/inputs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_weight="1"
+                android:id="@+id/btnReset"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="Reset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Button
+                android:layout_weight="1"
+                android:id="@+id/btnGenerate"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="Generate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:layout_below="@id/buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imgResult"
+                    android:layout_width="260dp"
+                    android:layout_height="260dp" />
+
+
+                <ProgressBar
+                    android:id="@+id/loader"
+                    android:visibility="gone"
+                    android:padding="110dp"
+                    android:layout_alignLeft="@+id/imgResult"
+                    android:layout_alignBottom="@+id/imgResult"
+                    android:layout_alignRight="@+id/imgResult"
+                    android:layout_alignTop="@+id/imgResult"
+                    android:indeterminate="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/txtSaveHint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/loader"
+                android:text="" />
+
+            <TextView
+                android:layout_marginTop="25dp"
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

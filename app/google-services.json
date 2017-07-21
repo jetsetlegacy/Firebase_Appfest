@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "50120385501",
+    "firebase_url": "https://fir-appfest-ae957.firebaseio.com",
+    "project_id": "fir-appfest-ae957",
+    "storage_bucket": "fir-appfest-ae957.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:50120385501:android:26827740be8d9ec0",
+        "android_client_info": {
+          "package_name": "appfest.fire.ka.firebase_appfest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "50120385501-s0svvmrdiijb9f25rcch5hg2j4iffi24.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA66MFbsVJz1K-KNeQhJYSfI7-RZHON4GQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
